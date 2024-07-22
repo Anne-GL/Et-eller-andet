@@ -21,6 +21,12 @@ app.use(cookieParser());
 const indexRouter = require("./routes/index");
 app.use("/", indexRouter);
 
+const partnersRouter = require("./routes/partners");
+app.use("/partners", partnersRouter); 
+
+const profileRouter = require("./routes/profile");
+app.use("/profile", profileRouter);
+
 server.listen(8080, async () => {
   console.log("Server is running on port http://localhost:8080");
 });

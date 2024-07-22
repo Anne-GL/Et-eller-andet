@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #002150;
+    height: 128px;
+    padding: 0 64px 0 12px;
+}
+
+.header-left img {
+    border-radius: 30%;
+    height: 100px;
+    width: 100px;
+    cursor: pointer; 
+}
+
+.header-right {
+
+}
+
+.header-right-profile {
+    color: white;
+    font-size: 20px;
+    cursor: pointer; 
+}
