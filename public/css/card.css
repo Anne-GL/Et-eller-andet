@@ -1,0 +1,207 @@
+.partners-card {
+  height: 200px;
+  width: 128px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  position: absolute;
+  border-radius: 10px;
+  border: 1px solid rgb(89, 89, 89);
+  padding: 8px;
+
+  left: 100px;
+  top: 300px;
+}
+
+.partners-card-info {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.partners-card-corner {
+  position: absolute;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.partners-card-corner1 {
+  top: 0;
+  left: 0;
+}
+.partners-card-corner2 {
+  top: 0;
+  right: 0;
+}
+.partners-card-corner3 {
+  bottom: 0;
+  left: 0;
+  transform: rotate(180deg);
+}
+.partners-card-corner4 {
+  bottom: 0;
+  transform: rotate(180deg);
+  right: 0;
+}
+
+.partners-card-middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 300%;
+  font-weight: 600;
+  -webkit-text-stroke-width: 1px;
+  color: white;
+  -webkit-text-stroke-color: black;
+  background: rgb(148, 148, 148);
+  background: radial-gradient(
+    circle,
+    rgba(148, 148, 148, 1) 0%,
+    rgb(48, 48, 48) 88%
+  );
+  height: 54px;
+  width: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 100%;
+}
+
+.partners-card-middle-double {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 600;
+  background: rgb(148, 148, 148);
+  background: radial-gradient(
+    circle,
+    rgba(148, 148, 148, 1) 0%,
+    rgb(48, 48, 48) 88%
+  );
+  height: 54px;
+  width: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 100%;
+}
+/*
+double card
+*/
+.partners-doubleCard {
+}
+
+.partners-doubleCard-card1 {
+  height: 46px;
+  width: 26px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  position: absolute;
+  border-radius: 4px;
+  border: 1px solid rgb(89, 89, 89);
+  padding: 3px;
+  left: 17%;
+  top: 25%;
+  transform: rotate(-20deg);
+  background-color: #ffffff;
+  z-index: 2;
+}
+
+.partners-doubleCard-card2 {
+    height: 46px;
+    width: 26px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    position: absolute;
+    border-radius: 4px;
+    border: 1px solid rgb(89, 89, 89);
+    padding: 3px;
+    right: 17%;
+    top: 25%;
+    transform: rotate(20deg);
+    background-color: #ffffff;
+  }
+
+.partners-doubleCard-card1-info, .partners-doubleCard-card2-info {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.partners-doubleCard-card1-corner {
+  position: absolute;
+  font-size: 4px;
+}
+
+.partners-doubleCard-card2-corner {
+  position: absolute;
+  font-size: 6px;
+}
+
+.partners-doubleCard-card1-corner1, .partners-doubleCard-card2-corner1 {
+  top: 0;
+  left: 0;
+}
+.partners-doubleCard-card1-corner2, .partners-doubleCard-card2-corner2 {
+  top: 0;
+  right: 0;
+}
+.partners-doubleCard-card1-corner3, .partners-doubleCard-card2-corner3 {
+  bottom: 0;
+  left: 0;
+}
+.partners-doubleCard-card1-corner4, .partners-doubleCard-card2-corner4 {
+  bottom: 0;
+  right: 0;
+}
+
+.partners-doubleCard-card1-middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 10px;
+  -webkit-text-stroke-width: 0.5px;
+  color: white;
+  -webkit-text-stroke-color: black;
+  background: rgb(148, 148, 148);
+  background: radial-gradient(
+    circle,
+    rgba(148, 148, 148, 1) 0%,
+    rgb(48, 48, 48) 88%
+  );
+  height: 16px;
+  width: 16px;
+  display: flex;
+  padding: 2px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+
+
+.partners-doubleCard-card2-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    -webkit-text-stroke-width: 0.5px;
+    color: white;
+    -webkit-text-stroke-color: black;
+    background: rgb(148, 148, 148);
+    background: radial-gradient(
+      circle,
+      rgba(148, 148, 148, 1) 0%,
+      rgb(48, 48, 48) 88%
+    );
+    height: 16px;
+    width: 16px;
+    display: flex;
+    padding: 2px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+  }
