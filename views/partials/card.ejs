@@ -1,0 +1,52 @@
+<div class="partners-card">
+  <div class="partners-card-info">
+    <% switch (value) { case 3: case 10: case 12: %>
+    <div class="partners-card-corner1 partners-card-corner"><%= value %></div>
+    <div class="partners-card-corner2 partners-card-corner"><%= value %></div>
+    <div class="partners-card-corner3 partners-card-corner"><%= value %></div>
+    <div class="partners-card-corner4 partners-card-corner"><%= value %></div>
+    <div class="partners-card-middle"><%= value %></div>
+    <% break; case 2:%>
+
+    <div class="partners-card-corner1 partners-card-corner">+<%= value %>−</div>
+    <div class="partners-card-corner2 partners-card-corner">+<%= value %>−</div>
+    <div class="partners-card-corner3 partners-card-corner">+<%= value %>−</div>
+    <div class="partners-card-corner4 partners-card-corner">+<%= value %>−</div>
+    <div class="partners-card-middle">+<%= value %>−</div>
+    <% break; case 4:%>
+
+    <div class="partners-card-corner4 partners-card-corner"><%= value %>∗1</div>
+    <div class="partners-card-corner1 partners-card-corner"><%= value %>∗1</div>
+    <div class="partners-card-corner2 partners-card-corner"><%= value %>∗1</div>
+    <div class="partners-card-corner3 partners-card-corner"><%= value %>∗1</div>
+    <div class="partners-card-middle"><%= value %></div>
+
+    <% break; case 5:%>
+    <div class="partners-card-corner4 partners-card-corner">
+      <%= value %>->x
+    </div>
+    <div class="partners-card-corner1 partners-card-corner">
+      <%= value %>->x
+    </div>
+    <div class="partners-card-corner2 partners-card-corner">
+      <%= value %>->x
+    </div>
+    <div class="partners-card-corner3 partners-card-corner">
+      <%= value %>->x
+    </div>
+    <div class="partners-card-middle"><%= value %></div>
+
+    <% break; case 1: case 6: case 8:%>
+    <div class="partners-card-corner4 partners-card-corner"><%= value %></div>
+    <div class="partners-card-corner1 partners-card-corner"><%= value %></div>
+    <div class="partners-card-corner2 partners-card-corner"><%= value %></div>
+    <div class="partners-card-corner3 partners-card-corner"><%= value %></div>
+    <div class="partners-card-middle-double">
+      <%- include("./doubleCard.ejs", {value: value})%>
+    </div>
+
+    <%break; default:%>
+    <div class="partners-card-middle">:(</div>
+    <%break; } %>
+  </div>
+</div>
