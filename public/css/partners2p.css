@@ -1,0 +1,13 @@
+.partners2p{
+    width: 100vw;
+    height: 100vh;
+}
+
+.partners2p-body{
+    width: 100%;
+    height: calc(100% - 128px);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
