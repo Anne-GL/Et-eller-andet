@@ -2,55 +2,97 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 640px;
-    width: 640px;
-    background: rgb(92,127,219);
-    background: radial-gradient(circle, rgba(92,127,219,1) 0%, rgba(0,33,80,1) 75%);
+    height: 700px;
+    width: 700px;
+    background: rgb(92, 127, 219);
+    background: radial-gradient(circle, rgba(92, 127, 219, 1) 0%, rgba(0, 33, 80, 1) 75%);
     border: 4px black solid;
     border-radius: 4px;
-}   
+}
 
-.twoPBoard-battleField{
+.twoPBoard-startAreas-area {
+    position: absolute;
+    height: 70px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.twoPBoard-startAreas-topRight {
+    background-color: yellow;
+    transform: rotate(45deg) translateX(-70px) translateY(-360px);
+}
+
+.twoPBoard-startAreas-bottomRight {
+    background-color: red;
+    transform: rotate(135deg) translateX(25px) translateY(-320px);
+}
+
+.twoPBoard-startAreas-topLeft {
+    background-color: red;
+    transform: rotate(135deg) translateX(25px) translateY(460px);
+}
+
+.twoPBoard-startAreas-bottomLeft {
+    background-color: yellow;
+    transform: rotate(45deg) translateX(-70px) translateY(410px);
+}
+
+.twoPBoard-cardBox-cards{
+    position: absolute;
+    height: 200px;
+    width: 128px;
+    border-radius: 10px;
+    border: 1px;
+    background-color: rgb(92, 127, 219);
+}
+
+.twoPBoard-cardBox-unusedCards{
+    transform: translateX(142px) translateY(-100px);
+}
+
+.twoPBoard-cardBox-usedCards{
+    transform: translateX(-256px) translateY(-100px);
+}
+
+
+.twoPBoard-battleField {
     position: relative;
     transform: translateX(-15px) translateY(-15px);
     height: 600;
     width: 600;
 }
 
-.twoPBoard-battleField-1, .twoPBoard-battleField-2, .twoPBoard-battleField-3, .twoPBoard-battleField-4, .twoPBoard-battleField-5,
-.twoPBoard-battleField-6, .twoPBoard-battleField-7, .twoPBoard-battleField-8, .twoPBoard-battleField-9, .twoPBoard-battleField-10, .twoPBoard-battleField-12, .twoPBoard-battleField-13, .twoPBoard-battleField-14, .twoPBoard-battleField-15,
-.twoPBoard-battleField-16, .twoPBoard-battleField-17,.twoPBoard-battleField-18, .twoPBoard-battleField-19, .twoPBoard-battleField-20,
-.twoPBoard-battleField-21, .twoPBoard-battleField-23, .twoPBoard-battleField-24, .twoPBoard-battleField-25,
-.twoPBoard-battleField-26, .twoPBoard-battleField-27, .twoPBoard-battleField-28, .twoPBoard-battleField-29, .twoPBoard-battleField-30,
-.twoPBoard-battleField-31, .twoPBoard-battleField-32, .twoPBoard-battleField-34, .twoPBoard-battleField-35,
-.twoPBoard-battleField-36, .twoPBoard-battleField-37, .twoPBoard-battleField-38, .twoPBoard-battleField-39, .twoPBoard-battleField-40,
-.twoPBoard-battleField-41, .twoPBoard-battleField-42,.twoPBoard-battleField-43{
+.twoPBoard-battleField-field {
+    padding: 6px;
+    border-radius: 50%;
+}
+
+.twoPBoard-battleField-number-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 30px;
     width: 30px;
-    background: radial-gradient(circle, rgba(92,127,219,1) 0%, rgba(0,33,80,1) 75%);
+    background: radial-gradient(circle, rgba(92, 127, 219, 1) 0%, rgba(0, 33, 80, 1) 75%);
     border: 1px black solid;
     border-radius: 100%;
+    font-size: 20px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-weight: 900;
+}
+
+.twoPBoard-battleField-heart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 20px;
     color: transparent;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
-    font-weight: 900;
-}  
-
-.twoPBoard-battleField-heart-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size:20px;
-    color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
     height: 30px;
     width: 30px;
-    background: radial-gradient(circle, rgba(92,127,219,1) 0%, rgba(0,33,80,1) 75%);
+    background: radial-gradient(circle, rgba(92, 127, 219, 1) 0%, rgba(0, 33, 80, 1) 75%);
     border: 1px black solid;
     border-radius: 100%;
 }

@@ -1,23 +1,33 @@
-<%const radius=250; const centerX=0; const centerY=0; %>
+<%const radius=310; const centerX=0; const centerY=0; %>
 
     <div class="twoPBoard">
-        <div class="twoPBoard-startAreas"></div>
+        <div class="twoPBoard-startAreas">
+            <div class="twoPBoard-startAreas-topRight twoPBoard-startAreas-area"></div>
+            <div class="twoPBoard-startAreas-topLeft twoPBoard-startAreas-area"></div>
+            <div class="twoPBoard-startAreas-bottomRight twoPBoard-startAreas-area"></div>
+            <div class="twoPBoard-startAreas-bottomLeft twoPBoard-startAreas-area"></div>
+        </div>
         <div class="twoPBoard-battleField">
             <% for(let i=0; 44>i; i++){ %>
                 <% const angle=(2*Math.PI/44) * i; const x=centerX + radius * Math.cos(angle+3.925); const y=centerY +
-                    radius * Math.sin(angle+3.925); %> 
-                    <div style="left:<%=x%>px;top:<%=y%>px;position:absolute; transform: rotate(<%=(360/44)*(i+38)%>deg);"
-                        class="twoPBoard-battleField-<%=i%>">
+                    radius * Math.sin(angle+3.925); const bgColor=i% 2==0? "red" :"yellow"; %>
+                    <div style="left:<%=x%>px;top:<%=y%>px;position:absolute; transform: rotate(<%=(360/44)*(i+38.5)%>deg); background-color:<%=bgColor%>;"
+                        class="twoPBoard-battleField-<%=i%> twoPBoard-battleField-field">
                         <%if(i% 11==0){%>
-                            <div class="twoPBoard-battleField-heart-container">
+                            <div style="color: <%=bgColor%>;" class="twoPBoard-battleField-heart-container">
                                 <i class="fa-solid fa-heart"></i>
                             </div>
                             <% }else{%>
-                                <div> <%=i%></div>
-                            <% } %>
+                                <div style="color: <%=bgColor%>;" class="twoPBoard-battleField-number-container">
+                                    <%=i%11%>
+                                </div>
+                                <% } %>
                     </div>
                     <% } %>
         </div>
         <div class="twoPBoard-goalCircles"></div>
-        <div class="twoPBoard-cardBox"></div>
+        <div class="twoPBoard-cardBox">
+            <div class="twoPBoard-cardBox-unusedCards twoPBoard-cardBox-cards"></div>
+            <div class="twoPBoard-cardBox-usedCards twoPBoard-cardBox-cards"></div>
+        </div>
     </div>
